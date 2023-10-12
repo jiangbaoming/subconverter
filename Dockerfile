@@ -5,7 +5,7 @@ COPY  . /app
 RUN yarn install
 RUN yarn build
 
-ENV SUBCONVERTER_VERSION=v0.8.0
+ENV SUBCONVERTER_VERSION=v0.8.1
 
 WORKDIR /
 RUN apk add --no-cache bash git curl zip
