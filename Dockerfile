@@ -18,5 +18,6 @@ COPY --from=build /app/dist /usr/share/nginx/html
 COPY --from=build /subconverter /base
 COPY --from=build /app/start.sh /app/start.sh
 COPY --from=build /app/dist/conf/config.js /app/conf/config.js
+RUN chmod +x /app/start.sh
 EXPOSE 80
 CMD [ "sh", "-c", "/app/start.sh" ]
