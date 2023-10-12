@@ -39,5 +39,5 @@ jobs:
           file: Dockerfile
           push: true
           tags: |
-            ${{ github.event.inputs.docker_username }}/invoke-ai:latest
-            ${{ github.event.inputs.docker_username }}/invoke-ai:${{ github.event.inputs.version }}
+            ${{ github.event.inputs.docker_username }}/subconerter:latest
+            ${{ github.event.inputs.docker_username }}/subconerter:${{ github.event.inputs.version }}
